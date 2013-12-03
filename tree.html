@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="static/js/tree.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link href="static/css/tree.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:#ccc">
+<div class="laa_left">
+	<div class="laa_left_content">
+            	<div class="laa_left_content_inner">
+                       	
+                        <div class="box-outer">
+                            <div id="1-box" class="box root">
+                                <div id="1-vline" class="vline" style="display:none"></div>
+                                <div id="1" class="button_toggle" onClick="clickbutton(this.id)">
+                                    <div id="1-arrow" class="arrow-open"></div>
+                                </div>
+                                <label style="left:30px">Company Name</label>
+                                <input id="1-child" type="hidden" value="0">
+                                
+                                <div id="1-add" class="add_btn" onClick="addNode(this.id)">Add New</div>
+                            </div>
+                            <div id="1-inner" class="box-inner">
+                                
+                                <!--here-->
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div style="position:relative; float:left; height:90px; width:100px"></div>
+            	</div>
+</div>
+
+<!-- Delete Warning Content-->
+<div id="del-notification" style="position:fixed; top:0px; left:0px; right:0px; bottom:0px; background:rgba(66,66,66,0.5);  z-index:10; display:none" onClick="document.getElementById('del-notification').style.display='none'">
+
+<div style="background:#E7E8E2; position: relative; margin: auto; height:185px; width:480px; top:200px; -webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;">
+    <div style="padding:20px 30px;">
+        <img src="static/images/warning-15.png" height="16" width="16" style=" position:relative; float:left; margin-right:5px; margin-bottom:20px"/>
+        <span style=" position:relative; float:left; font-family:'Droid Sans'; font-size:16px; font-weight:bold; color:#F00; margin-bottom:20px">Warning</span>
+        <br>
+        <spna style=" position:relative; float:left; font-family:'Droid Sans'; font-size:16px; color:#333">
+            By deleting , no further data will be received from this Appliance. However, all previous data will be stored. 
+        </span>
+        <div style="float: right; height: 100%; padding-top: 16px;margin-right: 45px;padding-right: 16px;">
+              <input type="button" class="save_changes" value="Procees" style="width:156px; height:42px; padding:10px; background:#F14949" onClick="removeNode(remove_node)">
+              <input type="button" class="cancel_changes" value="Cancel" style="width:156px; height:42px; padding:10px">
+        </div>
+    </div>	
+    <div style="position: absolute; font-size: 16px; margin: 0px; top: 5px; right: 10px; font-family:'Droid Sans'; cursor:pointer" onClick="document.getElementById('del-notification').style.display='none'">
+    X
+    </div>
+</div>
+
+</div>
+<!-- End Delete Warning Content-->
+    
+</body>
+</html>

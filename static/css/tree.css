@@ -1,0 +1,376 @@
+html, body
+{
+	position:relative;
+	float:left;
+	height:99%;
+	width:95%;
+}
+.box
+{
+	position:relative; 
+	float:left; 
+	margin: 2px 2px 12px 2px;
+	height:auto;
+	border:1px solid #999;
+	width:auto;
+	background:#F5F5F2;;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+	-webkit-box-shadow:  2px 2px 3px 0px rgba(120, 120, 120, 1);
+    box-shadow:  2px 2px 3px 0px rgba(120, 120, 120, 1);
+	padding:9px
+}
+.root
+{
+	width:330px;
+	background:#eee;
+}
+
+.box:hover, .selected
+{
+	background:#E5E5E5;
+	
+}
+.selected
+{
+	background:#81BDF8 !important;
+	border:1px solid #2579F2;
+}
+.selected .add_btn
+{
+	background:url(../images/plus-blue.png);
+}
+.selected .remove_btn
+{
+	background:url(../images/grey_cross4.png);
+}
+.box-inner
+{
+	position:relative; 
+	float:left; 
+	width:100%; 
+	left:35px
+}
+.box-outer
+{
+	position: relative;
+	float:left;
+	width: 100%;
+	height: auto;	
+}
+
+.button_toggle
+{
+	background:#D1F1FA;
+	height:28px;
+	width:28px;
+	position:relative;
+	float:left;
+	pointer-event:none;
+	cursor:pointer;
+	z-index:1;
+}
+
+.box input,.box label
+{
+	position:relative;
+	float:left;
+	width:128px;
+	padding:4px;
+	border:1px solid #999
+}
+.vline
+{
+	position: absolute;
+	height: 135%;
+	width: 1px;
+	background: #4C4C4B;
+	left: 23px;
+	top: 24px;
+	z-index:1;
+}
+.vline2
+{
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	background: #4C4C4B;
+	left: -9px;
+	top: 27px;
+	display:block;
+	z-index:1;
+	bottom:0px
+}
+.hline2
+{
+	position: absolute;
+	height: 1px;
+	width: 22px;
+	background: #4C4C4B;
+	left: -9px;
+	top: 27px;
+	display:block;
+	z-index:1;
+	float:left
+}
+.add_btn
+{
+	background: url(../images/light-plus-blue.png) no-repeat;
+	height: 17px;
+	width: 17px;
+	position: relative;
+	float: left;
+	top: 5px;
+	cursor: pointer;
+	margin-left:5px;
+}
+.remove_btn
+{
+	background: url(../images/grey_cross5.png);
+	height: 17px;
+	width: 17px;
+	position: relative;
+	float: left;
+	top: 5px;	
+	cursor:pointer;
+	margin-left:5px;
+}
+/*.selected-arrow2
+{
+	background: url(../images/blue-right-arrow.png);
+	height: 25px;
+	width: 13px;
+	position: absolute;
+	float: right;
+	right: -35px;
+	top: 6px;
+	display:none
+}
+.selected-arrow3
+{
+	background: url(../images/blue-right-arrow.png);
+	height: 25px;
+	width: 13px;
+	position: absolute;
+	float: right;
+	right: -35px;
+	top: 6px;
+	display:none
+}
+.selected-arrow4
+{
+	background: url(../images/blue-right-arrow.png);
+	height: 25px;
+	width: 13px;
+	position: absolute;
+	float: right;
+	right: -35px;
+	top: 6px;
+	display:none
+}
+.box:hover > .selected-arrow2
+{
+	display:block
+}.box:hover > .selected-arrow3
+{
+	display:block
+}.box:hover > .selected-arrow4
+{
+	display:block
+}
+.selected > .selected-arrow2
+{
+	display:block
+}.selected > .selected-arrow3
+{
+	display:block
+}.selected > .selected-arrow4
+{
+	display:block
+}*/
+.seprator1
+{
+	position: relative;
+	float: left;
+	height: 17px;
+	width: 2px;
+	background: #999995;
+	top: 5px;
+	margin-left:5px
+}
+.box:hover > .add_btn
+{
+	background: url(../images/plus-blue.png) no-repeat;
+	
+}
+.box:hover > .remove_btn
+{
+	background: url(../images/grey_cross4.png);
+}
+.arrow-open {
+	height: 24px;
+/*	border-top: 15px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 16px solid #777;*/
+	background: url(../images/triangle1-05-40.png);
+	width: 16px;
+/*	margin: 6px;*/
+	margin:5px;
+	pointer-event:none;
+	margin-top:0px
+}
+.arrow-close {
+	height: 19px;
+/*	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #777;*/
+	background: url(../images/triangle2-40-40.png);
+	width: 13px;
+	margin: 5px;
+	margin-left: 10px;
+	pointer-event:none;
+}
+.txt-box
+{
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width:160px !important;
+	font-family:'Droid Sans', arial, serif;
+	font-size:13px;
+	color:#4d4d4d;
+	-webkit-box-shadow: inset 1px 2px 1px 0px rgba(180, 180, 180, 1);
+    box-shadow: inset 1px 2px 1px 0px rgba(180, 180, 180, 1);
+	margin-left:5px
+}
+.txt-box-number
+{
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width:auto !important;
+	font-family:'Droid Sans', arial, serif;
+	font-size:13px;
+	color:#4d4d4d;
+	-webkit-box-shadow: inset 1px 2px 1px 0px rgba(180, 180, 180, 1);
+    box-shadow: inset 1px 2px 1px 0px rgba(180, 180, 180, 1);
+	margin-left:5px
+}
+.laa_left
+{
+	position:relative;
+	float:left;
+	width:100%;
+	height:100%
+}
+.laa_left_content {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: 45px;
+	margin: 5px;
+	min-height:500px;
+	bottom:0px
+}
+.laa_left_content_root {
+	position: absolute;
+	right: 35px;
+	left: 10px;
+	height: 28px;
+	background: #EEE;
+	top: 5px;
+}
+.laa_left_content_root span{ 
+	font-family: Droid sans;
+	font-size: 11px;
+	font-weight:bold;
+	margin: 8px;
+	position: absolute;
+}
+.root label{ 
+	font-family: Droid sans;
+	font-size: 11px;
+	font-weight:bold;
+	margin: 8px;
+	position: absolute;
+	border: none !important;
+	padding: 0px !important;
+}
+.root .add_btn
+{
+	position: relative;
+	float: right;
+	margin-right: 31px;
+	margin-top: 2px;
+	width: 78px;
+	text-align: right;
+	font-family: Droid sans;
+	font-size: 14px;
+	color: #2579F2;
+	text-decoration: underline;
+}
+.root .add_btn:hover
+{
+	background-repeat: no-repeat;
+}
+
+.laa_left_content_inner {
+	text-align:left;
+	padding:0px 0px 0px 10px;
+}
+
+.save_changes
+{
+	background:#4989F1; 
+	padding:20px; 
+	border:none; 
+	font-size:14px; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-family:'Droid Sans', serif	;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-weight:bold;
+	cursor:pointer
+}
+.cancel_changes
+{
+	background:#686867; 
+	padding:20px; 
+	border:none; 
+	font-size:14px; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-family:'Droid Sans', serif	;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width:130px;
+	font-weight:bold;
+	cursor:pointer
+}
+.tooltip-add
+{
+	height: 50px; 
+	width: 120px;  
+	left: 198px; 
+	position: absolute; 
+	top: 27px; 
+	z-index: 2; 
+	display:none
+}
+.tooltip-add-inner
+{
+	position: relative; float: left; background: none repeat scroll 0% 0% #333333; border-radius: 7px 7px 7px 7px; box-shadow: 0px 0px 5px #4D4D4D; padding:12px; color:#fff	
+}
+.tooltip-add-text
+{
+	position: relative; font-family: Droid Sans,serif; float: left; font-size: 12px; color: rgb(255, 255, 255); text-align:left	
+}
+.tooltip-remove
+{
+	height: 50px; 
+	width: 120px;  
+	left: 198px; 
+	position: absolute; 
+	top: 27px; 
+	z-index: 2; 
+	display:none
+}
